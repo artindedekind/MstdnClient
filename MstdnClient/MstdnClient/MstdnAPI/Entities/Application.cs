@@ -6,5 +6,7 @@ namespace MstdnAPI
 {
     public class Application
     {
+        public string Name { get; set; }
+        public Uri Website { get; set; }
     }
 }

@@ -4,9 +4,11 @@ using System.Text;
 
 namespace MstdnAPI
 {
-    public class List
+    public enum FilterContext
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
+        Home,
+        Notifications,
+        Public,
+        Thread,
     }
 }

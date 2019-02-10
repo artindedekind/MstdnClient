@@ -6,5 +6,7 @@ namespace MstdnAPI
 {
     public class Context
     {
+        public Status[] Ancestors { get; set; }
+        public Status[] Descendants { get; set; }
     }
 }
