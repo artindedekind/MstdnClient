@@ -43,12 +43,17 @@ namespace MstdnAPI
         public string SpoilerText { get; set; }
         [JsonProperty("visibility")]
         public StatusVisibility Visibility { get; set; }
-        //[JsonProperty("media_attachments")]
+        [JsonProperty("media_attachments")]
         public Attachment[] MediaAttachments { get; set; }
         public Mention[] Mentions { get; set; }
         public Tag[] Tags { get; set; }
         public Application Application { get; set; }
         public string Language { get; set; }
         public bool? Pinned { get; set; }
+
+        public override string ToString()
+        {
+            return Content;
+        }
     }
 }

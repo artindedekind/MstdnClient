@@ -12,6 +12,6 @@ namespace MstdnAPI
         [JsonProperty("value")]
         public string Value { get; set; }
         [JsonProperty("verified_at")]
-        public DateTime VerifiedAt { get; set; }
+        public DateTime? VerifiedAt { get; set; }
     }
 }
